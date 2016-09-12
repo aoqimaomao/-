@@ -49,12 +49,12 @@
       <script src="jquery-ui"></script>
       <script type="text/javascript" language="javascript">
          $(function(){
-            $("#left").draggable({
+            $(".draggable").draggable({
                helper:"clone",
                cursor: "move"
             });
 
-            $("#right").droppable({
+            $("#screen").find("[id^='part']").droppable({
                drop:function(event,ui){
                   $(this).children().remove();
                   var source = ui.draggable.clone();
