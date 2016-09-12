@@ -4,7 +4,7 @@ class Modular extends React.Component {
    render() {
       return (
           <div className="draggable"  style={{display:"inline-block",padding:"1rem"}}>
-             <div id="modularImg" style={{ width: '142px', height: '110px', background: '#aaa'}}>
+             <div id="modularImg" className="part" style={{ width: '142px', height: '110px', background: '#aaa'}}>
                 <img src={this.props.url} style={{ width: '142px', height: '110px'}}/>
              </div>
              <div>
