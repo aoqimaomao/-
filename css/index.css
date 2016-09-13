@@ -183,15 +183,17 @@ a, a:hover, a:focus {
     height: 2rem;
     /*background: #333;*/
     display: inline-block;
-    position: relative;
-    left: 7.4rem;
-    top: -12.32rem;
+    position: absolute;
+    right: 1rem;
+    top: -13.32rem;
 
 }
 .part{
     padding: 0;
     margin: 0;
-    display: inline-block;
+    /*display: inline-block;*/
     border: 1px solid #979797;
+    float: left;
+    overflow: hidden;
 
 }

@@ -58,7 +58,11 @@
                drop:function(event,ui){
                   $(this).children().remove();
                   var source = ui.draggable.clone();
+                  $(source).find(".heading").css({"width":"100%","height":"16%","background":"#444","color":"#fff","position":"absolute","top":"0"});
+                  $(source).find(".part").css({"width":"100%","height":"84%","position":"absolute","top":"16%"});
+                  $(source).css({"width":"100%","padding":"0","height":"100%","position":"relative"});
                   $(this).append(source);
+
 
                }
             });
