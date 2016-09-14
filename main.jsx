@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-var BS = require('react-bootstrap');
 
-import App from './js/App.jsx';
+
+import App from './js/screen.jsx';
 import Modular from './js/Modular.jsx';
+
+//import AlertDismissable from './js/edit.jsx';
+
 
 var chartNameList = [
     {title:"平均用户总量", url:"http://pic2.97uimg.com/58pic/19/62/67/99I58PICpYn.jpg!w1200"},
@@ -32,6 +35,8 @@ for(var i=0; i<chartNameList.length; i++) {
                 </div>
                 <h3 style={{fontSize:"1.4rem",fontWeight:"600",textAlign:"center",lineHeight:"3.2rem"}}>新增</h3>
             </div>
+
+
         </div>,
         document.getElementById('chartCnt'));
 };

@@ -33,6 +33,52 @@ a, a:hover, a:focus {
     outline: none;
 }
 
+
+/*以下是load.css*/
+#container{
+    width: 100%;
+    height: 100vh;
+    /*background: #333;*/
+    background-image: url("../image/bg.png");
+    background-repeat: round;
+}
+#kuang{
+    width:50%;
+    height:100% ;
+    background: url("../image/img2.png");
+    background-repeat: no-repeat;
+
+    margin:0 auto;
+}
+.top{
+    width: 100%;
+    height: 50%;
+    /*background: blue;*/
+}
+.bottom{
+    width: 100%;
+    height:50% ;
+    /*background: red;*/
+
+}
+.mainer{
+    width: 100%;
+    height: 30%;
+    background: #fff;
+    background: url("../iamge/loadBox.png");
+}
+.footer{
+    width: 100%;
+    height: 70%;
+
+}
+.footer span{
+    display: inline;
+    text-align: center;
+}
+
+
+
 /*resent css*/
 #line{
     width: 100%;
@@ -161,10 +207,8 @@ a, a:hover, a:focus {
 
 /*以下react_css*/
 .icon{
-    font-size: 1.6rem;
-    color: #fff;
-    line-height: 2rem;
-    /*display: inline-block;*/
+    border: none;
+    outline: none;
     width: 2rem;
     height: 2rem;
     background: #666;
@@ -173,6 +217,13 @@ a, a:hover, a:focus {
     /*letter-spacing: 1rem;*/
     /*text-indent: 1rem;*/
     /*vertical-align: middle;*/
+    text-align: center;
+}
+.icon .fa{
+    font-size: 1.6rem;
+    color: #fff;
+    line-height: 2rem;
+    vertical-align: middle;
     text-align: center;
 }
 .icon:hover{
@@ -197,3 +248,42 @@ a, a:hover, a:focus {
     overflow: hidden;
 
 }
+
+
+@media (min-width: 768px){
+    .modal-dialog {
+        width: 600px;
+        height: 100%;
+        margin: auto;
+    }}
+.modal-dialog {
+        position: relative;
+        width: 600px;
+    height: 100%;
+    margin: auto;
+}
+
+ @media (min-width: 768px){
+        .modal-content {
+            -webkit-box-shadow: 0 5px 15px #5c5d5e;
+            box-shadow: 0 5px 15px #5c5d5e;
+            margin-top: 45%;
+        }}
+
+.modal-content {
+         position: relative;
+         background-color: #fff;
+         -webkit-background-clip: padding-box;
+         background-clip: padding-box;
+         border: 1px solid #999;
+    margin-top: 45%;
+         border: 1px solid rgba(0,0,0,.2);
+         border-radius: 6px;
+         outline: 0;
+    -webkit-box-shadow: 0 5px 15px #5c5d5e;
+    box-shadow: 0 5px 15px #5c5d5e;
+}
+.modal{
+    background:rgba(51,51,51,0.2);
+     }
+
