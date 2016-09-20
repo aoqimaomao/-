@@ -4,7 +4,7 @@ var BS = require('react-bootstrap');
 
 import BigscreenPart from './src/BigscreenPart.jsx';
 import DragChartModal from './src/DragChartModal.jsx';
-import AddChartModal from './src/AddChartModal.jsx';
+//import AddChartModal from './src/AddChartModal.jsx';
 
 
 
@@ -28,8 +28,13 @@ for(var i=0; i<chartNameList.length; i++) {
                 })
             }
 
-            <AddChartModal method="post" 
-                action="http://localhost:8081/ems-chinanet-bigscreen/ems/bigscreen_show/dataShowAction/areaspline_chart_data.action" />
+             <div style={{display:"inline-block",padding:"1rem"}} >
+                    <div className="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="add_chart" style={{border:"none",width: '142px', height: '110px', background: '#aaa'}}>
+                        <span className="fa fa-plus" style={{display:"inline",lineHeight:"100px",color:"#fff",fontSize:"4rem",textAlign:"center"}}></span>
+                    </div>
+                    <h3 style={{fontSize:"1.4rem",fontWeight:"600",textAlign:"center",lineHeight:"3.2rem"}}>新增</h3>
+             </div>
+
         </div>,
         document.getElementById('chartCnt'));
 };

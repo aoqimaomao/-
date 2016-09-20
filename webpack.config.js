@@ -5,7 +5,7 @@
       path:__dirname +'/',
       filename: 'index.js',
 
-       publicPath: '/'
+       //publicPath: '/'
    },
 	
    devServer: {
