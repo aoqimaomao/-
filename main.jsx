@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 var BS = require('react-bootstrap');
 
-import BigscreenPart from './src/BigscreenPart.jsx';
-import DragChartModal from './src/DragChartModal.jsx';
-//import AddChartModal from './src/AddChartModal.jsx';
+import BigscreenPart from './components/BigscreenPart.jsx';
+import DragChartModal from './components/DragChartModal.jsx';
+//import AddChartModal from './components/AddChartModal.jsx';
 
 
 
