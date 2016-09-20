@@ -270,7 +270,15 @@ a, a:hover, a:focus {
     border: 1px solid #979797;
     float: left;
     overflow: hidden;
-
+}
+.part-clean{
+    display: none;
+    color: #ff3333;
+    /* background: red; */
+    position: absolute;
+    font-size: 2rem;
+    top: -0.6rem;
+    right: 0.8rem;
 }
 
 /*#myModal{*/
@@ -289,15 +297,4 @@ a, a:hover, a:focus {
     position: relative;
     top: 0;
     background: red;
-}
-
-.shanchu{
-    font-weight:normal;
-    display: none;
-    color: #ff3333;
-    /* background: red; */
-    position: absolute;
-    font-size: 2rem;
-    top: -0.6rem;
-    right: 0.8rem;
 }
