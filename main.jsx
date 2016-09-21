@@ -3,24 +3,26 @@ import ReactDOM from 'react-dom';
 var BS = require('react-bootstrap');
 
 import BigscreenPart from './src/BigscreenPart.jsx';
+import SourceFillBigscreen from './src/SourceFillBigscreen.jsx';
 import DragChart from './src/DragChart.jsx';
 import AddChart from './src/AddChart.jsx';
 
-if(typeof(chartList) != 'undefined') {
-    for(var i=0; i<chartList.length; i++) {
-        ReactDOM.render(
-            <div style={{width:"100%",height:"100%"}}>
-                {
-                    chartList.map(function (obj, i) {
-                        return <DragChart key={i} id={obj.id} path={obj.path} title={obj.name} url={obj.icon} style={{display:"inline-block"}} />
-                    })
-                }
 
-                <AddChart/>
-            </div>,
-            document.getElementById('chartCnt'));
-    };
+
+if(typeof(chartList) != 'undefined') {
+    ReactDOM.render(
+        <div style={{width:"100%",height:"100%"}}>
+            {
+                chartList.map(function (obj, i) {
+                    return <DragChart key={i} id={obj.id} path={obj.path} title={obj.name} url={obj.icon} style={{display:"inline-block"}} />
+                })
+            }
+            <AddChart />
+        </div>,
+        document.getElementById('chartCnt'));
 }
+
+
 
 const partIds=[
     "part_1_1", "map_part_1_2", "map_part_1_3","map_part_1_4","part_1_5",
@@ -32,8 +34,18 @@ ReactDOM.render(
     <div style={{width:"100%",height:"100%"}}>
         {
             partIds.map(function(obj, i) {
-                return<BigscreenPart key={i} index={i} id={obj} />
+                return <BigscreenPart key={i} index={i} id={obj} />
             })
         }
     </div>,
     document.getElementById('screen'));
+
+
+
+if(typeof(relList) != 'undefined') {
+    for(var i=0; i<relList.length; i++) {
+        ReactDOM.render(<SourceFillBigscreen id={relList[i].chart_id} path={relList[i].chart_path} 
+            url={relList[i].chart_icon} target={relList[i].target} title={relList[i].chart_title} />, 
+                document.getElementById(relList[i].target));
+    };
+}
